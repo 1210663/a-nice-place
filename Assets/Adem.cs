@@ -26,6 +26,14 @@ public class shotocharacter : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    void Start()
+    {
+        // Example initialization code
+        Debug.Log("Character initialized.");
+        isGrounded = true; // Assume the character starts on the ground
+        isBlocking = false; // Assume the character is not blocking initially
+    }
+
     void FixedUpdate()
     {
         // Horizontal movement
